@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelicious - Travel Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: transparent !important;
+    }
+
+    .carouselCaptions h5 {
+      font-size: 50px;
+    }
+
+    .nav-item:hover {
+      background-color: rgb(58, 58, 174);
+      justify-content: space-between;
+    }
+    
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="bg-transparent fixed-top navbar navbar-expand-lg">
+      <div class="container">
+
+        <a href="#" class="navbar-brand">
+          <img src="./Travelicious.png" alt="website-logo" width="250" height="50"/>
+        </a>
+        <button class="navbar-toggler btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Gallery</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="carouselCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Travelpic.jpg" class="d-block w-100" alt="Boracay">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Explore, Discover, and Embrace the World</h5>
+            <p>Exploring the World, One Journey at a Time</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./Coron Island.jpg" class="d-block w-100" alt="Coron Island">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Coron Island Escapades</h5>
+            <p>Discover the Paradise of Coron Island and Unleash Your Inner Explorer</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./Vigan.jpg" class="d-block w-100" alt="Vigan">
+          <div class="carousel-caption d-md-block">
+            <h5>Vigan Heritage Trail</h5>
+            <p>Vigan Heritage Trail</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
